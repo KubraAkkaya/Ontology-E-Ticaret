@@ -1,0 +1,2039 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2023/11/e-ticaret"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/asus/ontologies/2023/11/e-ticaret">
+    <Prefix name="" IRI="http://www.semanticweb.org/asus/ontologies/2023/11/e-ticaret"/>
+    <Prefix name="p0" IRI="http://www.semanticweb.org/asus/ontologies/2023/11/e-ticaret#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adresler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AksesuarKategorisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AltGiyimKategorisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AyakkabiKategorisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CepTelefonu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElektronikUrunKategorisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engelli"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvTelefonu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gazi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IcGiyimKategorisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indirimler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsTelefonu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kisiler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Magaza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagazaAdresi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mudur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musteri"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusteriyeOzel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OgretmenlerGunu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OzelGunler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pozisyonlar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satici"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaticiAdresi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaticiTelefonu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SevgililerGunu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrunKategorileri"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UstGiyimKategorisi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yazilimci"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yilbasi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adresi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aittir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#alir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#calisanTipi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#calisir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#icerir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#icindir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#indirimGunleri"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ozeldir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pozisyonu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rakibi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sahiptir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#satilir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#telefonu"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vardir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#yapar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#acikAdresi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#adi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#barkodu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#calisanSayisi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cinsiyeti"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fiyati"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ilcesi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ili"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#indirimMiktari"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kimligi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#magazaKodu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numarasi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#soyadi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#stok"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefonNumarasi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#toplamUcreti"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#urunTuru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cepTelefonu1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cepTelefonu2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#evTelefonu1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#indirim1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#indirim2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#indirim3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#indirim4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isTelefonu1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#isTelefonu2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#magaza2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#musteri1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#musteri2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#musteri3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#musteri4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pozisyon1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pozisyon3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satici1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satici2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satici3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satici4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satici5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#saticiAdresi1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#saticiAdresi2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#saticiAdresi3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#saticiAdresi4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#saticiAdresi5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#saticiMagazaAdresi1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satis1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satis2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satis3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#satis4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urun9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urunKategorisi2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urunKategorisi3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urunKategorisi4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urunKategorisi5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#urunKategorisi6"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AksesuarKategorisi"/>
+        <Class IRI="#UrunKategorileri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AltGiyimKategorisi"/>
+        <Class IRI="#UrunKategorileri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AyakkabiKategorisi"/>
+        <Class IRI="#UrunKategorileri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CepTelefonu"/>
+        <Class IRI="#SaticiTelefonu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElektronikUrunKategorisi"/>
+        <Class IRI="#UrunKategorileri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engelli"/>
+        <Class IRI="#Musteri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EvTelefonu"/>
+        <Class IRI="#SaticiTelefonu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gazi"/>
+        <Class IRI="#Musteri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IcGiyimKategorisi"/>
+        <Class IRI="#UrunKategorileri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsTelefonu"/>
+        <Class IRI="#SaticiTelefonu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagazaAdresi"/>
+        <Class IRI="#Adresler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mudur"/>
+        <Class IRI="#Pozisyonlar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musteri"/>
+        <Class IRI="#Kisiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusteriyeOzel"/>
+        <Class IRI="#Indirimler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal"/>
+        <Class IRI="#Musteri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OgretmenlerGunu"/>
+        <Class IRI="#OzelGunler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OzelGunler"/>
+        <Class IRI="#Indirimler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satici"/>
+        <Class IRI="#Kisiler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satici"/>
+        <Class IRI="#Pozisyonlar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaticiAdresi"/>
+        <Class IRI="#Adresler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SevgililerGunu"/>
+        <Class IRI="#OzelGunler"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UstGiyimKategorisi"/>
+        <Class IRI="#UrunKategorileri"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yazilimci"/>
+        <Class IRI="#Pozisyonlar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yilbasi"/>
+        <Class IRI="#OzelGunler"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AksesuarKategorisi"/>
+        <Class IRI="#AltGiyimKategorisi"/>
+        <Class IRI="#AyakkabiKategorisi"/>
+        <Class IRI="#IcGiyimKategorisi"/>
+        <Class IRI="#UstGiyimKategorisi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CepTelefonu"/>
+        <Class IRI="#EvTelefonu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CepTelefonu"/>
+        <Class IRI="#IsTelefonu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Engelli"/>
+        <Class IRI="#Gazi"/>
+        <Class IRI="#Normal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EvTelefonu"/>
+        <Class IRI="#IsTelefonu"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MagazaAdresi"/>
+        <Class IRI="#SaticiAdresi"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Mudur"/>
+        <Class IRI="#Satici"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Musteri"/>
+        <Class IRI="#Satici"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MusteriyeOzel"/>
+        <Class IRI="#OzelGunler"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OgretmenlerGunu"/>
+        <Class IRI="#SevgililerGunu"/>
+        <Class IRI="#Yilbasi"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Magaza"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CepTelefonu"/>
+        <NamedIndividual IRI="#cepTelefonu1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CepTelefonu"/>
+        <NamedIndividual IRI="#cepTelefonu2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EvTelefonu"/>
+        <NamedIndividual IRI="#evTelefonu1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indirimler"/>
+        <NamedIndividual IRI="#indirim1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusteriyeOzel"/>
+        <NamedIndividual IRI="#indirim1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indirimler"/>
+        <NamedIndividual IRI="#indirim2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OgretmenlerGunu"/>
+        <NamedIndividual IRI="#indirim2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indirimler"/>
+        <NamedIndividual IRI="#indirim3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SevgililerGunu"/>
+        <NamedIndividual IRI="#indirim3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indirimler"/>
+        <NamedIndividual IRI="#indirim4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Yilbasi"/>
+        <NamedIndividual IRI="#indirim4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IsTelefonu"/>
+        <NamedIndividual IRI="#isTelefonu1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IsTelefonu"/>
+        <NamedIndividual IRI="#isTelefonu2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Magaza"/>
+        <NamedIndividual IRI="#magaza2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engelli"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musteri"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gazi"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musteri"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#musteri3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#musteri4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mudur"/>
+        <NamedIndividual IRI="#pozisyon1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satici"/>
+        <NamedIndividual IRI="#pozisyon3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satici"/>
+        <NamedIndividual IRI="#satici1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satici"/>
+        <NamedIndividual IRI="#satici2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satici"/>
+        <NamedIndividual IRI="#satici3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satici"/>
+        <NamedIndividual IRI="#satici4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satici"/>
+        <NamedIndividual IRI="#satici5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaticiAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaticiAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaticiAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaticiAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SaticiAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MagazaAdresi"/>
+        <NamedIndividual IRI="#saticiMagazaAdresi1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satis"/>
+        <NamedIndividual IRI="#satis1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satis"/>
+        <NamedIndividual IRI="#satis2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satis"/>
+        <NamedIndividual IRI="#satis3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Satis"/>
+        <NamedIndividual IRI="#satis4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Urun"/>
+        <NamedIndividual IRI="#urun8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UstGiyimKategorisi"/>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AltGiyimKategorisi"/>
+        <NamedIndividual IRI="#urunKategorisi2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AyakkabiKategorisi"/>
+        <NamedIndividual IRI="#urunKategorisi3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IcGiyimKategorisi"/>
+        <NamedIndividual IRI="#urunKategorisi4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AksesuarKategorisi"/>
+        <NamedIndividual IRI="#urunKategorisi5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElektronikUrunKategorisi"/>
+        <NamedIndividual IRI="#urunKategorisi6"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adresi"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#saticiMagazaAdresi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#indirimGunleri"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#indirim1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#indirimGunleri"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#indirim2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rakibi"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#magaza2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sahiptir"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#satici2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sahiptir"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#satici1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#yapar"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#satis1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#yapar"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <NamedIndividual IRI="#satis2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ozeldir"/>
+        <NamedIndividual IRI="#indirim1"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ozeldir"/>
+        <NamedIndividual IRI="#indirim1"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim2"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim2"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim2"/>
+        <NamedIndividual IRI="#musteri3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim2"/>
+        <NamedIndividual IRI="#musteri4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim3"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim3"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim3"/>
+        <NamedIndividual IRI="#musteri4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim3"/>
+        <NamedIndividual IRI="#musteri3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim4"/>
+        <NamedIndividual IRI="#musteri4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim4"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim4"/>
+        <NamedIndividual IRI="#musteri3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icindir"/>
+        <NamedIndividual IRI="#indirim4"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#rakibi"/>
+        <NamedIndividual IRI="#magaza2"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alir"/>
+        <NamedIndividual IRI="#musteri1"/>
+        <NamedIndividual IRI="#satis1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alir"/>
+        <NamedIndividual IRI="#musteri2"/>
+        <NamedIndividual IRI="#satis3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alir"/>
+        <NamedIndividual IRI="#musteri3"/>
+        <NamedIndividual IRI="#satis2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#alir"/>
+        <NamedIndividual IRI="#musteri4"/>
+        <NamedIndividual IRI="#satis4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adresi"/>
+        <NamedIndividual IRI="#satici1"/>
+        <NamedIndividual IRI="#saticiAdresi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calisir"/>
+        <NamedIndividual IRI="#satici1"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pozisyonu"/>
+        <NamedIndividual IRI="#satici1"/>
+        <NamedIndividual IRI="#pozisyon1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#telefonu"/>
+        <NamedIndividual IRI="#satici1"/>
+        <NamedIndividual IRI="#isTelefonu1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adresi"/>
+        <NamedIndividual IRI="#satici2"/>
+        <NamedIndividual IRI="#saticiAdresi2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calisir"/>
+        <NamedIndividual IRI="#satici2"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#telefonu"/>
+        <NamedIndividual IRI="#satici2"/>
+        <NamedIndividual IRI="#cepTelefonu1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adresi"/>
+        <NamedIndividual IRI="#satici3"/>
+        <NamedIndividual IRI="#saticiAdresi3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calisir"/>
+        <NamedIndividual IRI="#satici3"/>
+        <NamedIndividual IRI="#magaza2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pozisyonu"/>
+        <NamedIndividual IRI="#satici3"/>
+        <NamedIndividual IRI="#pozisyon3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#telefonu"/>
+        <NamedIndividual IRI="#satici3"/>
+        <NamedIndividual IRI="#cepTelefonu2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adresi"/>
+        <NamedIndividual IRI="#satici4"/>
+        <NamedIndividual IRI="#saticiAdresi4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calisir"/>
+        <NamedIndividual IRI="#satici4"/>
+        <NamedIndividual IRI="#magaza2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#telefonu"/>
+        <NamedIndividual IRI="#satici4"/>
+        <NamedIndividual IRI="#isTelefonu2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#adresi"/>
+        <NamedIndividual IRI="#satici5"/>
+        <NamedIndividual IRI="#saticiAdresi5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calisir"/>
+        <NamedIndividual IRI="#satici5"/>
+        <NamedIndividual IRI="#magaza2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pozisyonu"/>
+        <NamedIndividual IRI="#satici5"/>
+        <NamedIndividual IRI="#pozisyon1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#telefonu"/>
+        <NamedIndividual IRI="#satici5"/>
+        <NamedIndividual IRI="#evTelefonu1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis1"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis1"/>
+        <NamedIndividual IRI="#urun4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis1"/>
+        <NamedIndividual IRI="#urun1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#satilir"/>
+        <NamedIndividual IRI="#satis1"/>
+        <NamedIndividual IRI="#musteri1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis2"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis2"/>
+        <NamedIndividual IRI="#urun4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#satilir"/>
+        <NamedIndividual IRI="#satis2"/>
+        <NamedIndividual IRI="#musteri2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis3"/>
+        <NamedIndividual IRI="#musteri3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis3"/>
+        <NamedIndividual IRI="#urun5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis3"/>
+        <NamedIndividual IRI="#urun6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis3"/>
+        <NamedIndividual IRI="#urun7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#satilir"/>
+        <NamedIndividual IRI="#satis3"/>
+        <NamedIndividual IRI="#musteri3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis4"/>
+        <NamedIndividual IRI="#musteri4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#icerir"/>
+        <NamedIndividual IRI="#satis4"/>
+        <NamedIndividual IRI="#urun6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#satilir"/>
+        <NamedIndividual IRI="#satis4"/>
+        <NamedIndividual IRI="#musteri4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun1"/>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun2"/>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun3"/>
+        <NamedIndividual IRI="#urunKategorisi2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun4"/>
+        <NamedIndividual IRI="#urunKategorisi2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun5"/>
+        <NamedIndividual IRI="#urunKategorisi3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun6"/>
+        <NamedIndividual IRI="#urunKategorisi3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun7"/>
+        <NamedIndividual IRI="#urunKategorisi4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aittir"/>
+        <NamedIndividual IRI="#urun8"/>
+        <NamedIndividual IRI="#urunKategorisi5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urun9"/>
+        <NamedIndividual IRI="#urunKategorisi6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+        <NamedIndividual IRI="#urun2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi1"/>
+        <NamedIndividual IRI="#urun1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi2"/>
+        <NamedIndividual IRI="#urun4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi2"/>
+        <NamedIndividual IRI="#urun3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi3"/>
+        <NamedIndividual IRI="#urun5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi3"/>
+        <NamedIndividual IRI="#urun6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi4"/>
+        <NamedIndividual IRI="#urun7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi5"/>
+        <NamedIndividual IRI="#urun8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#vardir"/>
+        <NamedIndividual IRI="#urunKategorisi6"/>
+        <NamedIndividual IRI="#urun9"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <Literal datatypeIRI="&xsd;string">HM Waikiki</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#calisanSayisi"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <Literal datatypeIRI="&xsd;integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#magazaKodu"/>
+        <NamedIndividual IRI="#Saticimagaza1"/>
+        <Literal datatypeIRI="&xsd;string">001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numarasi"/>
+        <NamedIndividual IRI="#cepTelefonu1"/>
+        <Literal datatypeIRI="&xsd;string">(542)-222-22-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numarasi"/>
+        <NamedIndividual IRI="#cepTelefonu2"/>
+        <Literal datatypeIRI="&xsd;string">(531)-222-22-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numarasi"/>
+        <NamedIndividual IRI="#evTelefonu1"/>
+        <Literal datatypeIRI="&xsd;string">(312)-444-44-44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#indirimMiktari"/>
+        <NamedIndividual IRI="#indirim1"/>
+        <Literal datatypeIRI="&xsd;string">%50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#indirimMiktari"/>
+        <NamedIndividual IRI="#indirim2"/>
+        <Literal datatypeIRI="&xsd;string">%20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#indirimMiktari"/>
+        <NamedIndividual IRI="#indirim3"/>
+        <Literal datatypeIRI="&xsd;string">%10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#indirimMiktari"/>
+        <NamedIndividual IRI="#indirim4"/>
+        <Literal datatypeIRI="&xsd;string">%5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numarasi"/>
+        <NamedIndividual IRI="#isTelefonu1"/>
+        <Literal datatypeIRI="&xsd;string">(531)-111-11-11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numarasi"/>
+        <NamedIndividual IRI="#isTelefonu2"/>
+        <Literal datatypeIRI="&xsd;string">(543)-333-33-33</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#musteri1"/>
+        <Literal datatypeIRI="&xsd;string">Arda Sazan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#musteri1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kimligi"/>
+        <NamedIndividual IRI="#musteri1"/>
+        <Literal datatypeIRI="&xsd;string">24135763212</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefonNumarasi"/>
+        <NamedIndividual IRI="#musteri1"/>
+        <Literal datatypeIRI="&xsd;string">(532)-145-21-45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#musteri2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kenan Deliyürek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#musteri2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kimligi"/>
+        <NamedIndividual IRI="#musteri2"/>
+        <Literal datatypeIRI="&xsd;string">55555555555</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefonNumarasi"/>
+        <NamedIndividual IRI="#musteri2"/>
+        <Literal datatypeIRI="&xsd;string">(538)-115-20-42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#musteri3"/>
+        <Literal datatypeIRI="&xsd;string">Sultan Sarizeybek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#musteri3"/>
+        <Literal datatypeIRI="&xsd;string">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kimligi"/>
+        <NamedIndividual IRI="#musteri3"/>
+        <Literal datatypeIRI="&xsd;string">55544667721</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefonNumarasi"/>
+        <NamedIndividual IRI="#musteri3"/>
+        <Literal datatypeIRI="&xsd;string">(505)-471-23-65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#musteri4"/>
+        <Literal datatypeIRI="&xsd;string">Kubra Akkaya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#musteri4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kimligi"/>
+        <NamedIndividual IRI="#musteri4"/>
+        <Literal datatypeIRI="&xsd;string">20113453234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefonNumarasi"/>
+        <NamedIndividual IRI="#musteri4"/>
+        <Literal datatypeIRI="&xsd;string">(542)-888-88-88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#satici1"/>
+        <Literal datatypeIRI="&xsd;string">Derya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#satici1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#soyadi"/>
+        <NamedIndividual IRI="#satici1"/>
+        <Literal datatypeIRI="&xsd;string">Deniz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#satici2"/>
+        <Literal datatypeIRI="&xsd;string">Buğra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#satici2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#soyadi"/>
+        <NamedIndividual IRI="#satici2"/>
+        <Literal datatypeIRI="&xsd;string">Taba</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#satici3"/>
+        <Literal datatypeIRI="&xsd;string">Mert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#satici3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#soyadi"/>
+        <NamedIndividual IRI="#satici3"/>
+        <Literal datatypeIRI="&xsd;string">Akasya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#satici4"/>
+        <Literal datatypeIRI="&xsd;string">Gülten</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#satici4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#soyadi"/>
+        <NamedIndividual IRI="#satici4"/>
+        <Literal datatypeIRI="&xsd;string">Biricik</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#satici5"/>
+        <Literal datatypeIRI="&xsd;string">Leyla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cinsiyeti"/>
+        <NamedIndividual IRI="#satici5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#soyadi"/>
+        <NamedIndividual IRI="#satici5"/>
+        <Literal datatypeIRI="&xsd;string">Altınel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acikAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi1"/>
+        <Literal datatypeIRI="&xsd;string">Asya Cad. Milli Sk. No:3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ilcesi"/>
+        <NamedIndividual IRI="#saticiAdresi1"/>
+        <Literal datatypeIRI="&xsd;string">Osmangazi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ili"/>
+        <NamedIndividual IRI="#saticiAdresi1"/>
+        <Literal datatypeIRI="&xsd;string">Bursa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acikAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi2"/>
+        <Literal datatypeIRI="&xsd;string">Avrupa Cad. Derya Sk. No:1 Yıldırım</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ilcesi"/>
+        <NamedIndividual IRI="#saticiAdresi2"/>
+        <Literal datatypeIRI="&xsd;string">Merkez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ili"/>
+        <NamedIndividual IRI="#saticiAdresi2"/>
+        <Literal datatypeIRI="&xsd;string">Bursa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acikAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi3"/>
+        <Literal datatypeIRI="&xsd;string">Asya Cad. Milli Sk. No:3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ilcesi"/>
+        <NamedIndividual IRI="#saticiAdresi3"/>
+        <Literal datatypeIRI="&xsd;string">Merkez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ili"/>
+        <NamedIndividual IRI="#saticiAdresi3"/>
+        <Literal datatypeIRI="&xsd;string">Ankara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acikAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi4"/>
+        <Literal datatypeIRI="&xsd;string">Avrupa Cad. Duran Sk. No:2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ilcesi"/>
+        <NamedIndividual IRI="#saticiAdresi4"/>
+        <Literal datatypeIRI="&xsd;string">Akyurt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ili"/>
+        <NamedIndividual IRI="#saticiAdresi4"/>
+        <Literal datatypeIRI="&xsd;string">Ankara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acikAdresi"/>
+        <NamedIndividual IRI="#saticiAdresi5"/>
+        <Literal datatypeIRI="&xsd;string">Berivan Cad. Saz Sk. No:2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ilcesi"/>
+        <NamedIndividual IRI="#saticiAdresi5"/>
+        <Literal datatypeIRI="&xsd;string">Ayaş</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ili"/>
+        <NamedIndividual IRI="#saticiAdresi5"/>
+        <Literal datatypeIRI="&xsd;string">Ankara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#acikAdresi"/>
+        <NamedIndividual IRI="#saticiMagazaAdresi1"/>
+        <Literal datatypeIRI="&xsd;string">Cumhuriyet Caddesi İpek Sokak No:3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ilcesi"/>
+        <NamedIndividual IRI="#saticiMagazaAdresi1"/>
+        <Literal datatypeIRI="&xsd;string">Orhangazi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ili"/>
+        <NamedIndividual IRI="#saticiMagazaAdresi1"/>
+        <Literal datatypeIRI="&xsd;string">İzmir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#toplamUcreti"/>
+        <NamedIndividual IRI="#satis1"/>
+        <Literal datatypeIRI="&xsd;double">60.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#toplamUcreti"/>
+        <NamedIndividual IRI="#satis2"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#toplamUcreti"/>
+        <NamedIndividual IRI="#satis3"/>
+        <Literal datatypeIRI="&xsd;double">400.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#toplamUcreti"/>
+        <NamedIndividual IRI="#satis4"/>
+        <Literal datatypeIRI="&xsd;double">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun1"/>
+        <Literal datatypeIRI="&xsd;string">Kazak</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun1"/>
+        <Literal datatypeIRI="&xsd;string">1234567891021</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun1"/>
+        <Literal datatypeIRI="&xsd;double">35.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun1"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun2"/>
+        <Literal datatypeIRI="&xsd;string">Gömlek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun2"/>
+        <Literal datatypeIRI="&xsd;string">9128651237564</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun2"/>
+        <Literal datatypeIRI="&xsd;double">81.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun2"/>
+        <Literal datatypeIRI="&xsd;integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun2"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun3"/>
+        <Literal datatypeIRI="&xsd;string">Pantalon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun3"/>
+        <Literal datatypeIRI="&xsd;string">5544221133667</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun3"/>
+        <Literal datatypeIRI="&xsd;double">50.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun3"/>
+        <Literal datatypeIRI="&xsd;integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun3"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun4"/>
+        <Literal datatypeIRI="&xsd;string">Şort</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun4"/>
+        <Literal datatypeIRI="&xsd;string">9999900000888</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun4"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun4"/>
+        <Literal datatypeIRI="&xsd;integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun4"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Çocuk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun5"/>
+        <Literal datatypeIRI="&xsd;string">Bot</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun5"/>
+        <Literal datatypeIRI="&xsd;string">4356789872145</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun5"/>
+        <Literal datatypeIRI="&xsd;double">350.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun5"/>
+        <Literal datatypeIRI="&xsd;integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun5"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun6"/>
+        <Literal datatypeIRI="&xsd;string">Babet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun6"/>
+        <Literal datatypeIRI="&xsd;string">1009908070600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun6"/>
+        <Literal datatypeIRI="&xsd;double">40.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun6"/>
+        <Literal datatypeIRI="&xsd;integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun6"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&xsd;string">Atlet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&xsd;string">1212121212121</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&xsd;double">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&xsd;integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Çocuk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun7"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun8"/>
+        <Literal datatypeIRI="&xsd;string">Kolye</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#barkodu"/>
+        <NamedIndividual IRI="#urun8"/>
+        <Literal datatypeIRI="&xsd;string">1313131313131</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fiyati"/>
+        <NamedIndividual IRI="#urun8"/>
+        <Literal datatypeIRI="&xsd;double">25.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#stok"/>
+        <NamedIndividual IRI="#urun8"/>
+        <Literal datatypeIRI="&xsd;integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#urunTuru"/>
+        <NamedIndividual IRI="#urun8"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#adi"/>
+        <NamedIndividual IRI="#urun9"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Bilgisayar</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#alir"/>
+        <ObjectProperty IRI="#satilir"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#calisir"/>
+        <ObjectProperty IRI="#sahiptir"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#aittir"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#adresi"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#rakibi"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#vardir"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adresi"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adresi"/>
+        <Class IRI="#Satici"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aittir"/>
+        <Class IRI="#Urun"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#alir"/>
+        <Class IRI="#Musteri"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#calisanTipi"/>
+        <Class IRI="#Satici"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#calisir"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#calisir"/>
+            <Class IRI="#Satici"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#icerir"/>
+        <Class IRI="#Satis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#icindir"/>
+        <Class IRI="#OzelGunler"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#indirimGunleri"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ozeldir"/>
+        <Class IRI="#MusteriyeOzel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pozisyonu"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#pozisyonu"/>
+            <Class IRI="#Satici"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#rakibi"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sahiptir"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#satilir"/>
+        <Class IRI="#Satis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#telefonu"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#telefonu"/>
+            <Class IRI="#Satici"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vardir"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vardir"/>
+        <Class IRI="#UrunKategorileri"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#yapar"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adresi"/>
+        <Class IRI="#MagazaAdresi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adresi"/>
+        <Class IRI="#SaticiAdresi"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#aittir"/>
+        <Class IRI="#UrunKategorileri"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#alir"/>
+        <Class IRI="#Satis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#calisir"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#icerir"/>
+        <Class IRI="#Musteri"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#icerir"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#icerir"/>
+            <Class IRI="#Urun"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#icindir"/>
+        <Class IRI="#Musteri"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#indirimGunleri"/>
+        <Class IRI="#Indirimler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ozeldir"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#ozeldir"/>
+            <ObjectUnionOf>
+                <Class IRI="#Engelli"/>
+                <Class IRI="#Gazi"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pozisyonu"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#pozisyonu"/>
+            <Class IRI="#Pozisyonlar"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#rakibi"/>
+        <Class IRI="#Magaza"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sahiptir"/>
+        <Class IRI="#Satici"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#satilir"/>
+        <Class IRI="#Musteri"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#telefonu"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#telefonu"/>
+            <Class IRI="#SaticiTelefonu"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vardir"/>
+        <Class IRI="#Urun"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vardir"/>
+        <Class IRI="#UrunKategorileri"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#yapar"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#yapar"/>
+            <Class IRI="#Satis"/>
+        </ObjectAllValuesFrom>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#cinsiyeti"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#acikAdresi"/>
+        <Class IRI="#MagazaAdresi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#acikAdresi"/>
+        <Class IRI="#SaticiAdresi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#adi"/>
+        <Class IRI="#Magaza"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#adi"/>
+        <Class IRI="#Musteri"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#adi"/>
+        <Class IRI="#Satici"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#adi"/>
+        <Class IRI="#Urun"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#barkodu"/>
+        <Class IRI="#Urun"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#calisanSayisi"/>
+        <Class IRI="#Magaza"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cinsiyeti"/>
+        <Class IRI="#Kisiler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fiyati"/>
+        <Class IRI="#Urun"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ilcesi"/>
+        <Class IRI="#MagazaAdresi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ilcesi"/>
+        <Class IRI="#SaticiAdresi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ili"/>
+        <Class IRI="#MagazaAdresi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ili"/>
+        <Class IRI="#SaticiAdresi"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#indirimMiktari"/>
+        <Class IRI="#Indirimler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kimligi"/>
+        <Class IRI="#Musteri"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#magazaKodu"/>
+        <Class IRI="#Magaza"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numarasi"/>
+        <Class IRI="#CepTelefonu"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numarasi"/>
+        <Class IRI="#EvTelefonu"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numarasi"/>
+        <Class IRI="#IsTelefonu"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#soyadi"/>
+        <Class IRI="#Satici"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#stok"/>
+        <Class IRI="#Urun"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefonNumarasi"/>
+        <Class IRI="#Musteri"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#toplamUcreti"/>
+        <Class IRI="#Satis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#urunTuru"/>
+        <Class IRI="#Urun"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#acikAdresi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#adi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#barkodu"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="&xsd;length">
+                <Literal datatypeIRI="&rdf;PlainLiteral">13</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#calisanSayisi"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cinsiyeti"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fiyati"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ilcesi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ili"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#indirimMiktari"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kimligi"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="&xsd;length">
+                <Literal datatypeIRI="&rdf;PlainLiteral">11</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#magazaKodu"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numarasi"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="&xsd;pattern">
+                <Literal datatypeIRI="&rdf;PlainLiteral">\([1-9][0-9][0-9]\)-[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#soyadi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#stok"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefonNumarasi"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="&xsd;pattern">
+                <Literal datatypeIRI="&rdf;PlainLiteral">\([1-9][0-9][0-9]\)-[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#toplamUcreti"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#urunTuru"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Erkek</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Kadın</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Çocuk</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
